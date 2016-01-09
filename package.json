@@ -1,0 +1,23 @@
+{
+  "name": "gitup_db",
+  "version": "1.0.0",
+  "description": "gitUp db repo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitAwwwShit/gitUp_db.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GitAwwwShit/gitUp_db/issues"
+  },
+  "homepage": "https://github.com/GitAwwwShit/gitUp_db#readme",
+  "dependencies": {
+    "knex": "^0.9.0",
+    "pg": "^4.4.3"
+  }
+}
