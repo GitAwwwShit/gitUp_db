@@ -1,7 +1,9 @@
 
 exports.seed = function(knex, Promise) {
-  return knex('child_goal').del()
+  return knex('entry').del()
   .then(function(){
+    return knex('child_goal').del()
+  }).then(function(){
     return knex('goal').del();
   }).then(function(){
     return knex('activity').del();
@@ -10,13 +12,11 @@ exports.seed = function(knex, Promise) {
   }).then(function(){
     return knex('reward').del();
   }).then(function(){
-    return knex('entry').del();
-  }).then(function(){
     return knex('child').del();
   }).then(function(){
-    return knex('user').del();
+    return knex('user_login').del();
   }).then(function(){
-    return knex('test').del();
+    return knex('user_type').del();
   }).then(function(){
     return knex.raw('ALTER SEQUENCE "activity_id_seq" RESTART WITH 1;');
   }).then(function(){
@@ -33,6 +33,8 @@ exports.seed = function(knex, Promise) {
     return knex.raw('ALTER SEQUENCE "reward_id_seq" RESTART WITH 1;');
   }).then(function(){
     return knex.raw('ALTER SEQUENCE "user_login_id_seq" RESTART WITH 1;');
+  }).then(function(){
+    return knex.raw('ALTER SEQUENCE "user_type_id_seq" RESTART WITH 1;');
   }).then(function(){
     return Promise.all([
       knex('user_type').insert({
@@ -105,36 +107,36 @@ exports.seed = function(knex, Promise) {
     ])
   }).then(function(){
     return Promise.all([
-      knex('activty').insert({
-        activty_name:'play'
+      knex('activity').insert({
+        activity_name:'play'
       }),
-      knex('reward').insert({
-        activty_name:'swimming'
+      knex('activity').insert({
+        activity_name:'swimming'
       }),
-      knex('reward').insert({
-        activty_name:'soccer'
+      knex('activity').insert({
+        activity_name:'soccer'
       })
     ])
   }).then(function(){
     return Promise.all([
       knex('goal').insert({
         minute_amount:30,
-        activty_id:1,
+        activity_id:1,
         badge_id:1
       }),
       knex('goal').insert({
         minute_amount:300,
-        activty_id:2,
+        activity_id:2,
         badge_id:1
-      })
+      }),
       knex('goal').insert({
         minute_amount:600,
-        activty_id:1,
+        activity_id:1,
         badge_id:1
       }),
       knex('goal').insert({
         minute_amount:60,
-        activty_id:3,
+        activity_id:3,
         badge_id:1
       })
     ])
@@ -198,4 +200,4 @@ exports.seed = function(knex, Promise) {
       })
     ])
   })
-});
+};
