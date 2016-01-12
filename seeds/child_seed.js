@@ -62,32 +62,35 @@ exports.seed = function(knex, Promise) {
       knex('child').insert({
         first_name: 'Timmy',
         gender:'male',
-        age: 7,
+        dob: '8-1-2005',
         user_login_id:1
       }),
       knex('child').insert({
         first_name: 'Suzy',
         gender:'male',
-        age: 9,
+        dob: '3-1-2009',
         user_login_id:1
       }),
       knex('child').insert({
         first_name: 'Megatron',
         gender:'male',
-        age: 8,
+        dob: '2-1-2008',
         user_login_id:2
       })
     ])
   }).then(function(){
     return Promise.all([
       knex('reward').insert({
-        type:'Cookies'
+        type:'Cookies',
+        date_time:'1-29-2016'
       }),
       knex('reward').insert({
-        type:'ipad'
+        type:'ipad',
+        date_time:'2-29-2016'
       }),
       knex('reward').insert({
-        type:'new car'
+        type:'new car',
+        date_time:'3-29-2016'
       })
     ])
   }).then(function(){
