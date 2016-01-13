@@ -121,6 +121,10 @@ exports.seed = function(knex, Promise) {
       knex('activity').insert({
         activity_name:'soccer',
         activity_image:'http://signitup.com/wp-content/uploads/2014/10/black-soccer-ball.png'
+      }),
+      knex('activity').insert({
+        activity_name:'soccer',
+        activity_image:'http://signitup.com/wp-content/uploads/2014/10/black-soccer-ball.png'
       })
     ])
   }).then(function(){
