@@ -47,8 +47,8 @@ exports.seed = function(knex, Promise) {
   }).then(function(){
     return Promise.all([
       knex('user_login').insert({
-        username: 'Eli',
-        auth_id: '1a2b3c4d',
+        username: 'Elijah Parkhurst',
+        auth_id: '118440276042580194245',
         user_type_id: 1
       }),
       knex('user_login').insert({
@@ -111,13 +111,16 @@ exports.seed = function(knex, Promise) {
   }).then(function(){
     return Promise.all([
       knex('activity').insert({
-        activity_name:'play'
+        activity_name:'play',
+        activity_image:'http://signitup.com/wp-content/uploads/2014/10/black-soccer-ball.png'
       }),
       knex('activity').insert({
-        activity_name:'swimming'
+        activity_name:'swimming',
+        activity_image:'http://signitup.com/wp-content/uploads/2014/10/black-soccer-ball.png'
       }),
       knex('activity').insert({
-        activity_name:'soccer'
+        activity_name:'soccer',
+        activity_image:'http://signitup.com/wp-content/uploads/2014/10/black-soccer-ball.png'
       })
     ])
   }).then(function(){
