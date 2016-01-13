@@ -111,16 +111,140 @@ exports.seed = function(knex, Promise) {
   }).then(function(){
     return Promise.all([
       knex('activity').insert({
-        activity_name:'play',
-        activity_image:'http://signitup.com/wp-content/uploads/2014/10/black-soccer-ball.png'
+        activity_name:'Arts and Crafts',
+        activity_image:'/img/activities/artsandcrafts.png'
       }),
       knex('activity').insert({
-        activity_name:'swimming',
-        activity_image:'http://signitup.com/wp-content/uploads/2014/10/black-soccer-ball.png'
+        activity_name:'Basketball',
+        activity_image:'/img/activities/basketball.png'
       }),
       knex('activity').insert({
-        activity_name:'soccer',
-        activity_image:'http://signitup.com/wp-content/uploads/2014/10/black-soccer-ball.png'
+        activity_name:'Basketball (w)',
+        activity_image:'/img/activities/basketballw.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Chores',
+        activity_image:'/img/activities/chores.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Clean Room',
+        activity_image:'/img/activities/cleanroom.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Cross Country Skiing',
+        activity_image:'/img/activities/crosscountryskiing.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Football',
+        activity_image:'/img/activities/football.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Golfing',
+        activity_image:'/img/activities/golfing.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Hiking',
+        activity_image:'/img/activities/hiking.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Hockey',
+        activity_image:'/img/activities/hockey.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Jump Rope',
+        activity_image:'/img/activities/jumprope.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Jumping Jacks',
+        activity_image:'/img/activities/jumpingjacks.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Lacrosse',
+        activity_image:'/img/activities/lacrosse.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Lift Weights',
+        activity_image:'/img/activities/liftweights.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Martial Arts',
+        activity_image:'/img/activities/martialarts.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Mathematics',
+        activity_image:'/img/activities/mathematics.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Mow the Lawn',
+        activity_image:'/img/activities/mowthelawn.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Ping Pong',
+        activity_image:'/img/activities/pingpong.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Play with Siblings',
+        activity_image:'/img/activities/playwithsiblings.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Playground',
+        activity_image:'/img/activities/playground.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Racing (w)',
+        activity_image:'/img/activities/racingw.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Reading',
+        activity_image:'/img/activities/reading.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Ride a Bike',
+        activity_image:'/img/activities/rideabike.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Running',
+        activity_image:'/img/activities/running.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Science',
+        activity_image:'/img/activities/science.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Set the Table',
+        activity_image:'/img/activities/setthetable.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Skateboarding',
+        activity_image:'/img/activities/skateboarding.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Skiing',
+        activity_image:'/img/activities/skiing.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Swimming',
+        activity_image:'/img/activities/swimming.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Vacuum',
+        activity_image:'/img/activities/vacuum.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Volleyball',
+        activity_image:'/img/activities/volleyball.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Walk the Dog',
+        activity_image:'/img/activities/walkthedog.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Walking',
+        activity_image:'/img/activities/walking.png'
+      }),
+      knex('activity').insert({
+        activity_name:'Wash Dishes',
+        activity_image:'/img/activities/washdishes.png'
       })
     ])
   }).then(function(){
