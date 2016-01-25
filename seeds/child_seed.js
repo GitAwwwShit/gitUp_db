@@ -52,8 +52,8 @@ exports.seed = function(knex, Promise) {
         user_type_id: 1
       }),
       knex('user_login').insert({
-        username: 'Brian',
-        auth_id: '9a8b7c6d',
+        username: 'Brian Huber',
+        auth_id: '113680426776437192073',
         user_type_id: 1
       })
     ])
