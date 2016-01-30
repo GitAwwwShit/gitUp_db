@@ -115,10 +115,6 @@ exports.seed = function(knex, Promise) {
         activity_image:'/img/activities/artsandcrafts.png'
       }),
       knex('activity').insert({
-        activity_name:'Basketball',
-        activity_image:'/img/activities/basketball.png'
-      }),
-      knex('activity').insert({
         activity_name:'Basketball (w)',
         activity_image:'/img/activities/basketballw.png'
       }),
